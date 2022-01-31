@@ -6,8 +6,8 @@ from sqlalchemy import (BigInteger, Column, Integer, String, DateTime, Date,
                         Numeric, Boolean, Float)
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
-from flask_restplus import Api
-from flask_restplus_sqlalchemy import ApiModelFactory
+from flask_restx import Api
+from flask_restx_sqlalchemy import ApiModelFactory
 
 
 class TestFactory(unittest.TestCase):

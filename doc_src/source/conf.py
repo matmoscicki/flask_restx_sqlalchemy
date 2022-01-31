@@ -15,11 +15,11 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../'))
-from flask_restplus_sqlalchemy import __version__
+from flask_restx_sqlalchemy import __version__
 
 # -- Project information -----------------------------------------------------
 
-project = u'flask_restplus_sqlalchemy'
+project = u'flask_restx_sqlalchemy'
 copyright = u'2020, Brandon Bluemner'
 author = u'Brandon Bluemner'
 
@@ -106,7 +106,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'flask_restplus_sqlalchemydoc'
+htmlhelp_basename = 'flask_restx_sqlalchemydoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -133,7 +133,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'flask_restplus_sqlalchemy.tex', u'flask\\_restplus\\_sqlalchemy Documentation',
+    (master_doc, 'flask_restx_sqlalchemy.tex', u'flask\\_restx\\_sqlalchemy Documentation',
      u'Brandon Bluemner', 'manual'),
 ]
 
@@ -143,7 +143,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'flask_restplus_sqlalchemy', u'flask_restplus_sqlalchemy Documentation',
+    (master_doc, 'flask_restx_sqlalchemy', u'flask_restx_sqlalchemy Documentation',
      [author], 1)
 ]
 
@@ -154,8 +154,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'flask_restplus_sqlalchemy', u'flask_restplus_sqlalchemy Documentation',
-     author, 'flask_restplus_sqlalchemy', 'One line description of project.',
+    (master_doc, 'flask_restx_sqlalchemy', u'flask_restx_sqlalchemy Documentation',
+     author, 'flask_restx_sqlalchemy', 'One line description of project.',
      'Miscellaneous'),
 ]
 

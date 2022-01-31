@@ -5,7 +5,7 @@ from io import open
 from os import path
 from setuptools import find_packages, setup
 
-from flask_restplus_sqlalchemy import __version__
+from flask_restx_sqlalchemy import __version__
 
 here = path.abspath(path.dirname(__file__))
 
@@ -19,12 +19,12 @@ with open(path.join(here, 'requirements-dev.txt')) as f:
 
 
 setup(
-    name='flask_restplus_sqlalchemy',
+    name='flask_restx_sqlalchemy',
     version=__version__,
-    description='Flask RestPlus SqlAlchemy',
+    description='Flask RESTx SqlAlchemy',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://bluemner.github.io/flask_restplus_sqlalchemy/',
+    url='https://bluemner.github.io/flask_restx_sqlalchemy/',
     author='Brandon Bluemner',
     classifiers=[
         #   3 - Alpha
@@ -40,7 +40,7 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
 
-    keywords='flask restplus api sql SqlAlchemy swagger models',
+    keywords='flask restx api sql SqlAlchemy swagger models',
     packages=find_packages(),
     python_requires='>=3.5',
     install_requires=required,
@@ -50,7 +50,7 @@ setup(
     },
 
     project_urls={
-        'Bug Reports': 'https://github.com/bluemner/flask_restplus_sqlalchemy/issues',
-        'Source': 'https://github.com/bluemner/flask_restplus_sqlalchemy',
+        'Bug Reports': 'https://github.com/bluemner/flask_restx_sqlalchemy/issues',
+        'Source': 'https://github.com/bluemner/flask_restx_sqlalchemy',
     },
 )

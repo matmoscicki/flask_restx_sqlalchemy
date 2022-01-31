@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Flask RestPlus SQLAlchemy &mdash; flask_restplus_sqlalchemy 0.0.3rc1 documentation</title>
+  <title>Flask RESTX SQLAlchemy &mdash; flask_restx_sqlalchemy 0.0.3rc1 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="flask_restplus_sqlalchemy 0.0.3rc1 documentation" href="#"/> 
+    <link rel="top" title="flask_restx_sqlalchemy 0.0.3rc1 documentation" href="#"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -52,7 +52,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> flask_restplus_sqlalchemy
+            <a href="#" class="icon icon-home"> flask_restx_sqlalchemy
           
 
           
@@ -81,8 +81,8 @@
             
                 <!-- Local TOC -->
                 <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Flask RestPlus SQLAlchemy</a><ul>
-<li><a class="reference internal" href="#module-flask_restplus_sqlalchemy.factory">flask_restplus_sqlalchemy.factory module</a></li>
+<li><a class="reference internal" href="#">Flask RESTX SQLAlchemy</a><ul>
+<li><a class="reference internal" href="#module-flask_restx_sqlalchemy.factory">flask_restx_sqlalchemy.factory module</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
@@ -100,7 +100,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">flask_restplus_sqlalchemy</a>
+          <a href="#">flask_restx_sqlalchemy</a>
         
       </nav>
 
@@ -130,7 +130,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Flask RestPlus SQLAlchemy</li>
+      <li>Flask RESTX SQLAlchemy</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -149,15 +149,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="flask-restplus-sqlalchemy">
-<h1>Flask RestPlus SQLAlchemy<a class="headerlink" href="#flask-restplus-sqlalchemy" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-flask_restplus_sqlalchemy.factory">
-<span id="flask-restplus-sqlalchemy-factory-module"></span><h2>flask_restplus_sqlalchemy.factory module<a class="headerlink" href="#module-flask_restplus_sqlalchemy.factory" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="flask-restx-sqlalchemy">
+<h1>Flask RESTX SQLAlchemy<a class="headerlink" href="#flask-restx-sqlalchemy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-flask_restx_sqlalchemy.factory">
+<span id="flask-restx-sqlalchemy-factory-module"></span><h2>flask_restx_sqlalchemy.factory module<a class="headerlink" href="#module-flask_restx_sqlalchemy.factory" title="Permalink to this headline">¶</a></h2>
 <p>Api Model  Factory
 Contains instace of factory for use by swagger</p>
 <dl class="class">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory">
-<em class="property">class </em><code class="descclassname">flask_restplus_sqlalchemy.factory.</code><code class="descname">ApiModelFactory</code><span class="sig-paren">(</span><em>api: flask_restplus.api.Api</em>, <em>db: flask_sqlalchemy.SQLAlchemy</em>, <em>logger=&lt;Logger flask_restplus_sqlalchemy.factory (WARNING)&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory">
+<em class="property">class </em><code class="descclassname">flask_restx_sqlalchemy.factory.</code><code class="descname">ApiModelFactory</code><span class="sig-paren">(</span><em>api: flask_restx.api.Api</em>, <em>db: flask_sqlalchemy.SQLAlchemy</em>, <em>logger=&lt;Logger flask_restx_sqlalchemy.factory (WARNING)&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Api Model Factory takes in Flask Rest API and SqlAlchemy models then
 generates Flask Rest API Models needed for use with swagger and
@@ -167,7 +167,7 @@ marshal</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>api</strong> (<em>Api</em>) – flask_restplus Api instance to which is needed for                     api.model function call</li>
+<li><strong>api</strong> (<em>Api</em>) – flask_restx Api instance to which is needed for                     api.model function call</li>
 <li><strong>db</strong> (<em>SQLAlchemy</em>) – instance with the models load, failure to do             correct initialization order will result in error</li>
 <li><strong>logger</strong> (<em>Logger</em>) – logging instance will use <code class="docutils literal notranslate"><span class="pre">get_logger(__name__)</span></code></li>
 </ul>
@@ -180,8 +180,8 @@ marshal</p>
 <p class="last">Any model that you wish to display must not have             <code class="docutils literal notranslate"><span class="pre">__abstract__=True</span></code> as this will make it hidden.</p>
 </div>
 <dl class="staticmethod">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.auto_generate_meta_form">
-<em class="property">static </em><code class="descname">auto_generate_meta_form</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.auto_generate_meta_form" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.auto_generate_meta_form">
+<em class="property">static </em><code class="descname">auto_generate_meta_form</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.auto_generate_meta_form" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generates the dict meta form needed by <cite>api.model</cite></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -198,14 +198,14 @@ marshal</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.entities">
-<code class="descname">entities</code><em class="property"> = {}</em><a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.entities" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.entities">
+<code class="descname">entities</code><em class="property"> = {}</em><a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.entities" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dict with <code class="docutils literal notranslate"><span class="pre">__tablename__,</span> <span class="pre">Model</span></code></p>
 </dd></dl>
 
 <dl class="method">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.get_entity">
-<code class="descname">get_entity</code><span class="sig-paren">(</span><em>table_name: str</em><span class="sig-paren">)</span> &#x2192; flask_restplus.model.Model<a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.get_entity" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.get_entity">
+<code class="descname">get_entity</code><span class="sig-paren">(</span><em>table_name: str</em><span class="sig-paren">)</span> &#x2192; flask_restx.model.Model<a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.get_entity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Helper function to get entity by name from dict of entities</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -215,7 +215,7 @@ marshal</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Table Api Model from list</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">flask_restplus.model.Model</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">flask_restx.model.Model</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.8)"><strong>Exception</strong></a> – Table Name was not found,                 Check that you have not called this function be for initlizing the                <code class="docutils literal notranslate"><span class="pre">db:</span> <span class="pre">SQLAlchemy</span></code> object with the models</td>
 </tr>
@@ -224,20 +224,20 @@ marshal</p>
 </dd></dl>
 
 <dl class="staticmethod">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.get_python_type">
-<em class="property">static </em><code class="descname">get_python_type</code><span class="sig-paren">(</span><em>column</em><span class="sig-paren">)</span> &#x2192; type<a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.get_python_type" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.get_python_type">
+<em class="property">static </em><code class="descname">get_python_type</code><span class="sig-paren">(</span><em>column</em><span class="sig-paren">)</span> &#x2192; type<a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.get_python_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the python type</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.logger">
-<code class="descname">logger</code><em class="property"> = None</em><a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.logger" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.logger">
+<code class="descname">logger</code><em class="property"> = None</em><a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.logger" title="Permalink to this definition">¶</a></dt>
 <dd><p>Logger, you can disable by sending out put to null or None</p>
 </dd></dl>
 
 <dl class="staticmethod">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.python_to_flask">
-<em class="property">static </em><code class="descname">python_to_flask</code><span class="sig-paren">(</span><em>python_type: type</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.python_to_flask" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.python_to_flask">
+<em class="property">static </em><code class="descname">python_to_flask</code><span class="sig-paren">(</span><em>python_type: type</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.python_to_flask" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts python types to flask types</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -254,8 +254,8 @@ marshal</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="flask_restplus_sqlalchemy.factory.ApiModelFactory.schema">
-<code class="descname">schema</code><em class="property"> = {}</em><a class="headerlink" href="#flask_restplus_sqlalchemy.factory.ApiModelFactory.schema" title="Permalink to this definition">¶</a></dt>
+<dt id="flask_restx_sqlalchemy.factory.ApiModelFactory.schema">
+<code class="descname">schema</code><em class="property"> = {}</em><a class="headerlink" href="#flask_restx_sqlalchemy.factory.ApiModelFactory.schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>Intermediate form of Use By <cite>api.model</cite></p>
 </dd></dl>
 

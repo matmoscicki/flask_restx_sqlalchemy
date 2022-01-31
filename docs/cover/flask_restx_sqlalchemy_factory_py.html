@@ -8,7 +8,7 @@
     
     
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for flask_restplus_sqlalchemy/factory.py: 100%</title>
+    <title>Coverage for flask_restx_sqlalchemy/factory.py: 100%</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -23,7 +23,7 @@
 
 <div id="header">
     <div class="content">
-        <h1>Coverage for <b>flask_restplus_sqlalchemy/factory.py</b> :
+        <h1>Coverage for <b>flask_restx_sqlalchemy/factory.py</b> :
             <span class="pc_cov">100%</span>
         </h1>
 
@@ -207,7 +207,7 @@
 <p id="t5" class="stm run hide_run"><span class="key">from</span> <span class="nam">logging</span> <span class="key">import</span> <span class="nam">Logger</span><span class="op">,</span> <span class="nam">getLogger</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="stm run hide_run"><span class="key">from</span> <span class="nam">typing</span> <span class="key">import</span> <span class="nam">List</span><span class="op">,</span> <span class="nam">Dict</span><span class="strut">&nbsp;</span></p>
 <p id="t7" class="stm run hide_run"><span class="key">from</span> <span class="nam">flask_sqlalchemy</span> <span class="key">import</span> <span class="nam">SQLAlchemy</span><span class="strut">&nbsp;</span></p>
-<p id="t8" class="stm run hide_run"><span class="key">from</span> <span class="nam">flask_restplus</span> <span class="key">import</span> <span class="nam">Api</span><span class="op">,</span> <span class="nam">fields</span><span class="op">,</span> <span class="nam">Model</span><span class="strut">&nbsp;</span></p>
+<p id="t8" class="stm run hide_run"><span class="key">from</span> <span class="nam">flask_restx</span> <span class="key">import</span> <span class="nam">Api</span><span class="op">,</span> <span class="nam">fields</span><span class="op">,</span> <span class="nam">Model</span><span class="strut">&nbsp;</span></p>
 <p id="t9" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t10" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t11" class="stm run hide_run"><span class="key">class</span> <span class="nam">ApiModelFactory</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -217,7 +217,7 @@
 <p id="t15" class="pln"><span class="str">        marshal</span><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t18" class="pln"><span class="str">        :param Api api: flask_restplus Api instance to which is needed for \</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="pln"><span class="str">        :param Api api: flask_restx Api instance to which is needed for \</span><span class="strut">&nbsp;</span></p>
 <p id="t19" class="pln"><span class="str">                    api.model function call</span><span class="strut">&nbsp;</span></p>
 <p id="t20" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t21" class="pln"><span class="str">        :param SQLAlchemy db: instance with the models load, failure to do \</span><span class="strut">&nbsp;</span></p>
@@ -313,7 +313,7 @@
 <p id="t111" class="pln"><span class="str">                    __tablename__ for a given model.</span><span class="strut">&nbsp;</span></p>
 <p id="t112" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t113" class="pln"><span class="str">            :return: Table Api Model from list</span><span class="strut">&nbsp;</span></p>
-<p id="t114" class="pln"><span class="str">            :rtype: flask_restplus.model.Model</span><span class="strut">&nbsp;</span></p>
+<p id="t114" class="pln"><span class="str">            :rtype: flask_restx.model.Model</span><span class="strut">&nbsp;</span></p>
 <p id="t115" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t116" class="pln"><span class="str">            :raises Exception: Table Name was not found, \</span><span class="strut">&nbsp;</span></p>
 <p id="t117" class="pln"><span class="str">                Check that you have not called this function be for initlizing the\</span><span class="strut">&nbsp;</span></p>

@@ -1,21 +1,25 @@
-# Flask RestPlus SqlAlchemy
-Auto generates the Flask RestPlus Model section in swagger from SqlAlchemy models. 
+# Info
+
+This is a fork of the Flask Restplus Sqlalchemy where RESTPlus has been changed to RESTX.
+
+# Flask RESTX SqlAlchemy
+Auto generates the Flask RESTX Model section in swagger from SqlAlchemy models.
 
 > **Note:** Make sure you don't import any endpoints be for you call `init_db(flask_application)` else the `api_model_factory.get_entity` will be empty
 
-> **Disclaimer** This project is not at this time, 2020 Feb. 1,  affiliated with Flask, Flask-RestPlus or SqlAlchemy projects.
+> **Disclaimer** This project is not at this time, 2020 Feb. 1,  affiliated with Flask, Flask-RESTX or SqlAlchemy projects.
 
 # Usage
 ```python 
     from sqlalchemy import BigInteger, Column, Integer, String, DateTime, Date
     from flask_sqlalchemy import SQLAlchemy
     from flask import Flask
-    from flask_restplus import Api
-    from flask_restplus_sqlalchemy import ApiModelFactory
+    from flask_restx import Api
+    from flask_restx_sqlalchemy import ApiModelFactory
 
     flask_app = Flask(__name__) # Flask Application
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = 'connection string'
-    # Create RestPlus API
+    # Create RESTX API
     api: Api = Api(
             version='x',
             title='test_api',
@@ -68,7 +72,7 @@ Below is a sample use case.
 │   │   │   ├── person.py
 │   │   │   └── status.py
 │   │   ├── __init__.py
-│   │   ├── restplus.py
+│   │   ├── restx.py
 │   │   └── swagger
 │   │       ├── __init__.py
 │   │       └── status.py
@@ -105,8 +109,8 @@ import logging
 
 from http import HTTPStatus
 from flask import request
-from flask_restplus import Resource
-from ..restplus import api, name_space
+from flask_restx import Resource
+from ..restx import api, name_space
 from ..swagger import api_model_factory
 
 from ...data.access import DataAccessLayer, PersonDAL
@@ -173,14 +177,14 @@ class PersonItem(Resource):
         return None, HTTPStatus.NO_CONTENT
 
 ```
-## Restplus
+## RESTX
 In above example this is where api and error handling logic is located
 ```python
 """ Api Creation
 """
 import logging
 
-from flask_restplus import Api, Namespace
+from flask_restx import Api, Namespace
 from sqlalchemy.orm.exc import NoResultFound
 from .. import __version__
 log = logging.getLogger(__name__)

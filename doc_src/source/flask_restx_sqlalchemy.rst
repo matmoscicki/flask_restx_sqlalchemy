@@ -1,13 +1,13 @@
-flask\_restplus\_sqlalchemy package
+flask\_restx\_sqlalchemy package
 ===================================
 
 Submodules
 ----------
 
-flask\_restplus\_sqlalchemy.factory module
+flask\_restx\_sqlalchemy.factory module
 ------------------------------------------
 
-.. automodule:: flask_restplus_sqlalchemy.factory
+.. automodule:: flask_restx_sqlalchemy.factory
     :members:
     :undoc-members:
     :show-inheritance:
@@ -16,7 +16,7 @@ flask\_restplus\_sqlalchemy.factory module
 Module contents
 ---------------
 
-.. automodule:: flask_restplus_sqlalchemy
+.. automodule:: flask_restx_sqlalchemy
     :members:
     :undoc-members:
     :show-inheritance:

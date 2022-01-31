@@ -10,7 +10,7 @@
             "args": [
                 "-o",
                 "${workspaceFolder}/doc_src/source/",
-                "${workspaceFolder}/flask_restplus_sqlalchemy/"
+                "${workspaceFolder}/flask_restx_sqlalchemy/"
             ],
             "problemMatcher": []
         },
@@ -72,7 +72,7 @@
                 "-m",
                 "pylint",
                 "--rcfile=${workspaceFolder}/.pylintrc",
-                "flask_restplus_sqlalchemy"
+                "flask_restx_sqlalchemy"
             ],
             "problemMatcher": []
         },
@@ -84,7 +84,7 @@
                 "-m",
                 "bandit",
                 "-r",
-                "flask_restplus_sqlalchemy"
+                "flask_restx_sqlalchemy"
             ],
             "problemMatcher": []
         },
@@ -97,7 +97,7 @@
                 "pytest",
                 "--cov-report",
                 "html",
-                "--cov=flask_restplus_sqlalchemy/"
+                "--cov=flask_restx_sqlalchemy/"
             ],
             "problemMatcher": []
         },
