@@ -5,7 +5,6 @@ from io import open
 from os import path
 from setuptools import find_packages, setup
 
-from flask_restx_sqlalchemy import __version__
 
 here = path.abspath(path.dirname(__file__))
 
@@ -20,7 +19,7 @@ with open(path.join(here, 'requirements-dev.txt')) as f:
 
 setup(
     name='flask_restx_sqlalchemy',
-    version=__version__,
+    version='0.0.3',
     description='Flask RESTx SqlAlchemy',
     long_description=long_description,
     long_description_content_type='text/markdown',
